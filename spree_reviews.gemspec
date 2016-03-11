@@ -21,9 +21,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.1.0.beta'
+  s.add_dependency 'solidus_core', '~> 1.1.0'
 
-  s.add_development_dependency 'ffaker', '>= 1.32.1'
+  s.add_development_dependency 'ffaker', '~> 1.16'
   s.add_development_dependency 'capybara', '~> 2.4.4'
   s.add_development_dependency 'capybara-screenshot', '~> 1.0.11'
   s.add_development_dependency 'database_cleaner', '~> 1.4.0'

@@ -1,9 +1,7 @@
 RSpec.describe Spree::ReviewSetting do
   subject { described_class.new }
 
-  before do
-    reset_spree_preferences
-  end
+  before { subject.reset }
 
   it 'have the include_unapproved_reviews preference' do
     expect(subject).to respond_to(:preferred_include_unapproved_reviews)
@@ -14,7 +12,7 @@ RSpec.describe Spree::ReviewSetting do
   it 'have the preview_size preference' do
     expect(subject).to respond_to(:preferred_preview_size)
     expect(subject).to respond_to(:preferred_preview_size=)
-    expect(subject.preferred_preview_size).to be(3)
+    expect(subject.preferred_preview_size).to eq 3
   end
 
   it 'have the show_email preference' do
