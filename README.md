@@ -10,7 +10,7 @@ Straightforward review/rating functionality.
 ## Installation
 
 ```ruby
- gem 'spree_reviews', github: 'spree-contrib/spree_reviews', branch: 'X-X-stable'
+ gem 'spree_reviews', git: 'https://github.com/magma-labs/spree_reviews.git'
  ```
 
  The `branch` option is important: it must match the version of Spree you're using.
